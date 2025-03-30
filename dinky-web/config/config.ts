@@ -45,9 +45,10 @@ export default defineConfig({
    */
   hash: true,
   esbuildMinifyIIFE: true,
-  publicPath: process.env.NODE_ENV === 'production' ? './' : '/',
+  base: '/dinky/',
+  publicPath: '/dinky/',
   history: {
-    type: 'hash'
+    type: 'browser'
   },
   /**
    * @name 兼容性设置

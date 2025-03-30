@@ -18,7 +18,7 @@
  */
 
 export enum API_CONSTANTS {
-  BASE_URL = '.',
+  BASE_URL = '/dinky/',
   GET_SERVICE_VERSION = '/api/version',
 
   /** ------------------------------------------------- auth center ------------------------------------ */

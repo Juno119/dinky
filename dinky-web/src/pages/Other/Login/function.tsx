@@ -41,7 +41,8 @@ export const gotoRedirectUrl = () => {
 export const redirectToLogin = (tipMsg: string) => {
   //todo: Using modal box prompts, but currently it will pop up repeatedly because the interface is called every time, so there will be repeated pop ups
   WarningMessageAsync(tipMsg);
-  window.location.href = '/#/user/login';
+  //window.location.href = './user/login';
+  history.push('/user/login');
 };
 
 export const initSomeThing = () => {

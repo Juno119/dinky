@@ -28,7 +28,7 @@ const NoFoundPage: React.FC = () => (
     title='404'
     subTitle={l('app.request.404')}
     extra={
-      <Button type='primary' onClick={() => history.push('/')}>
+      <Button type='primary' onClick={() => history.push('./')}>
         {l('app.request.back')}
       </Button>
     }

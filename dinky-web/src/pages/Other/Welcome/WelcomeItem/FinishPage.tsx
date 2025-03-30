@@ -26,7 +26,7 @@ const FinishPage = () => {
       status='success'
       title={l('welcome.finish.title')}
       subTitle={l('welcome.finish')}
-      extra={[<a href='/'>{l('welcome.goLogin')}</a>]}
+      extra={[<a href='./'>{l('welcome.goLogin')}</a>]}
     />
   );
 };
