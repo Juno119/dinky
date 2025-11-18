@@ -25,7 +25,7 @@ import {
   setLocalThemeToStorage
 } from '@/utils/function';
 import { WarningMessageAsync } from '@/utils/messages';
-import { history } from '@@/core/history';
+import { history } from '@umijs/max';
 import { queryDataByParams } from '@/services/BusinessCrud';
 import { API_CONSTANTS } from '@/services/endpoints';
 
@@ -42,7 +42,7 @@ export const redirectToLogin = (tipMsg: string) => {
   //todo: Using modal box prompts, but currently it will pop up repeatedly because the interface is called every time, so there will be repeated pop ups
   WarningMessageAsync(tipMsg);
   //window.location.href = './user/login';
-  history.push('/user/login');
+  history.push(API_CONSTANTS.LOGIN_PATH);
 };
 
 export const initSomeThing = () => {

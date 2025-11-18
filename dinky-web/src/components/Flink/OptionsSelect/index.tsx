@@ -31,7 +31,7 @@ const FlinkOptionsSelect = (props: FlinkOptionsProps) => {
   const renderTemplateDropDown = (item: any) => {
     return (
       <>
-        <Link href={'#/registration/document'}>+ {l('rc.cc.addConfig')}</Link>
+        <Link href={'/registration/document'}>+ {l('rc.cc.addConfig')}</Link>
         <Divider style={{ margin: '8px 0' }} />
         {item}
       </>

@@ -83,7 +83,7 @@ const RuleEditForm = (props: AlertRuleFormProps) => {
         <Authorized key='create' path='/registration/alert/template/add'>
           <>
             <Divider style={{ margin: '8px 0' }} />
-            <Link href={'#/registration/alert/template'}>+ {l('rc.alert.template.new')}</Link>
+            <Link href={'/registration/alert/template'}>+ {l('rc.alert.template.new')}</Link>
           </>
         </Authorized>
       </>

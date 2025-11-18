@@ -75,7 +75,7 @@ const JobHistoryList = (props: HistoryProps) => {
       title: l('global.table.operate'),
       valueType: 'option',
       render: (text: any, record: Jobs.JobInstance) => [
-        <Link href={`#/devops/job-detail?id=${record.id}`} key={'history-detail'}>
+        <Link href={`/devops/job-detail?id=${record.id}`} key={'history-detail'}>
           {l('devops.joblist.detail')}
         </Link>
       ]

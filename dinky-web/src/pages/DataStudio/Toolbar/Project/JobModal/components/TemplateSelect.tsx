@@ -86,7 +86,7 @@ const TemplateSelect: React.FC<{ type: string; onChange: (v: string) => void }> 
           pageSize: 6,
           size: 'small',
           showTotal: () => (
-            <Typography.Link href={'#/registration/document'}>
+            <Typography.Link href={'/registration/document'}>
               + {l('rc.cc.addConfig')}
             </Typography.Link>
           )

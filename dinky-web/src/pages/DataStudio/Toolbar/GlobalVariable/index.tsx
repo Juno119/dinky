@@ -64,7 +64,7 @@ const GlobalVariable = () => {
       defaultSize={'small'}
       options={false}
       type={'list'}
-      toolBarRender={() => [<Link href={'/#/registration/fragment'}>{l('rc.gv.Management')}</Link>]}
+      toolBarRender={() => [<Link href={'/registration/fragment'}>{l('rc.gv.Management')}</Link>]}
       columns={columns}
       request={(params) =>
         queryList(API_CONSTANTS.GLOBAL_VARIABLE, { ...params, filter: { enabled: [1] } })

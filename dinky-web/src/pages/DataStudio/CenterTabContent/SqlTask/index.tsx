@@ -642,7 +642,7 @@ export const SqlTask = memo((props: FlinkSqlProps & any) => {
       { taskId: currentState.taskId }
     );
     if (dataByParams) {
-      window.open(`/#/devops/job-detail?id=${dataByParams?.id}`);
+      window.open(`/devops/job-detail?id=${dataByParams?.id}`);
     }
   }, [currentState.taskId]);
 

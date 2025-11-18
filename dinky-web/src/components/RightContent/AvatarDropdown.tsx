@@ -46,18 +46,19 @@ import type { MenuInfo } from 'rc-menu/lib/interface';
 import { useCallback, useState } from 'react';
 import HeaderDropdown from '../HeaderDropdown';
 import localforage from 'localforage';
+import { API_CONSTANTS } from '@/services/endpoints';
 
 export const loginOut = async () => {
   await outLogin();
   removeKeyFromLocalStorage(TOKEN_KEY);
-  const { search, pathname } = window.location;
+  const { search, pathname } = history.location;
   const urlParams = new URL(window.location.href).searchParams;
   /** 此方法会跳转到 redirect 参数所在的位置 */
   const redirect = urlParams.get('redirect');
   // Note: There may be security issues, please note
-  if (window.location.pathname !== '/user/login' && !redirect) {
+  if (pathname !== API_CONSTANTS.LOGIN_PATH && !redirect) {
     history.replace({
-      pathname: '/user/login',
+      pathname: API_CONSTANTS.LOGIN_PATH,
       search: stringify({
         redirect: pathname + search
       })

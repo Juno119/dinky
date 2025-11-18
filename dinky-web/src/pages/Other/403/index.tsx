@@ -32,7 +32,7 @@ export const UnAccessible = () => {
           <Button
             type='primary'
             onClick={(e) => {
-              history.push('./');
+              history.push('/');
             }}
           >
             {l('app.request.back')}
